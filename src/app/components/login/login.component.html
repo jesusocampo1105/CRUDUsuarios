@@ -1,0 +1,27 @@
+<div class="login">
+  <div class="login-triangle"></div>
+
+  <h2 class="login-header">Log in</h2>
+
+  <form class="login-container" [formGroup]="login" method="post">
+    <p>
+      <input
+        type="text"
+        [(ngModel)]="user.username"
+        formControlName="username"
+        placeholder="Nombre de usuario"
+        required
+      />
+    </p>
+    <p>
+      <input
+        type="password"
+        [(ngModel)]="user.password"
+        formControlName="password"
+        placeholder="Contraseña"
+        required
+      />
+    </p>
+    <p><input type="submit" value="Log in" (click)="signUp()" /></p>
+  </form>
+</div>
