@@ -6,11 +6,11 @@ import {HttpClient} from "@angular/common/http"
 })
 export class AuthService {
 
-  url = "http://localhost:3001";
-  urlget = "http://localhost:3001/get/users/";
-  urldelete = "http://localhost:3001/new/user/";
-  urlpost = "http://localhost:3001/new/user/";
-  urlput = "http://localhost:3001/new/user/";
+  url = "https://crud-usuarios-back.vercel.app";
+  urlget = "https://crud-usuarios-back.vercel.app/get/users/";
+  urldelete = "https://crud-usuarios-back.vercel.app/new/user/";
+  urlpost = "https://crud-usuarios-back.vercel.app/new/user/";
+  urlput = "https://crud-usuarios-back.vercel.app/new/user/";
 
 
   constructor(private http: HttpClient) { }
