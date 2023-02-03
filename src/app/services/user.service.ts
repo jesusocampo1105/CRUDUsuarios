@@ -8,10 +8,10 @@ import { user } from '../models/user';
 })
 export class UserService {
 
-  urlget = "http://localhost:3001/get/users/";
-  urldelete = "http://localhost:3001/new/user/";
-  urlpost = "http://localhost:3001/new/user/";
-  urlput = "http://localhost:3001/new/user/";
+  urlget = "https://crud-usuarios-back.vercel.app/get/users/";
+  urldelete = "https://crud-usuarios-back.vercel.app/new/user/";
+  urlpost = "https://crud-usuarios-back.vercel.app/new/user/";
+  urlput = "https://crud-usuarios-back.vercel.app/new/user/";
 
   constructor(private http: HttpClient) { }
 
